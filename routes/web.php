@@ -13,10 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/aku', function () {
-    return view('coba');
-});
+
+Route::get('/', [App\Http\Controllers\rama::class, 'ipang']);
+
+
+Auth::routes();
+
+Route::resource('/home', App\Http\Controllers\tambah::class);

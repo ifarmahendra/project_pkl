@@ -1,13 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>kkk</h1>
+@extends('layouts.app')
 
-</body>
-</html>
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+            <div class="card-header text-center text-uppercase">{{ __('Hallo! Selamat Datang Di Website Kami') }}</div>
+
+            <div class='card-body'>
+            <div class="portfolio-caption">
+                <div class="text-center portfolio-caption-heading">LEGREK.COM</div>
+                <div class="text-center portfolio-caption-subheading text-muted mt-3">
+                Untuk Melihat Fitur-Fitur Yang Lainnya Silahkan Melakukan Login Terlebih Dahulu, Jika Belum Mempunyai Akun
+                Silahkan Registrasi
+
+                <a href="{{ route('login') }}" class="btn btn-primary">Go somewhere</a>
+            </div>         
+            
+            </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="card text-center mt-3">
+    <div class="card-header">
+    Hallo! Selamat Datang Di Website Kami'
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">LEGREK.COM</h5>
+        <p class="card-text">Untuk Melihat Fitur-Fitur Yang Lainnya Silahkan Melakukan Login Terlebih Dahulu, Jika Belum Mempunyai Akun
+                Silahkan Registrasi</p>
+        <a href="{{ route('login') }}" class="btn btn-primary">Go somewhere</a>
+    </div>
+   
+</div>
+@endsection
+
+
