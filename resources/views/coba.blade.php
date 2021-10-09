@@ -13,16 +13,10 @@
                 <div class="text-center portfolio-caption-subheading text-muted mt-3">
                 Untuk Melihat Fitur-Fitur Yang Lainnya Silahkan Melakukan Login Terlebih Dahulu, Jika Belum Mempunyai Akun
                 Silahkan Registrasi
-<<<<<<< Updated upstream
-
-                <a href="{{ route('login') }}" class="btn btn-primary">Go somewhere</a>
-            </div>         
-=======
             </div>
             <div class="text-center">
             <a href="{{ route('login') }}" class="btn btn-primary">Lanjut</a>
             </div>
->>>>>>> Stashed changes
             
             </div>
             </div>
