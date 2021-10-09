@@ -8,7 +8,13 @@
             <h1>Data Customer</h1>
           </div>
 
+<<<<<<< Updated upstream
           <a href ="" class="btn btn-primary mb-3">Tambah Data</a>
+=======
+         
+
+          <a href ="/home/create/" class="btn btn-primary mb-3">Tambah Data</a>
+>>>>>>> Stashed changes
         <div class="table-responsive">
                 <table class="table table-hover table-striped table-bordered">          
                 <thead>

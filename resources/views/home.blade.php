@@ -23,7 +23,11 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
+<<<<<<< Updated upstream
                 @endif   
+=======
+                 @endif   
+>>>>>>> Stashed changes
                 <form action="{{route('home.store')}}" method="post"> 
                     @csrf
                     <div class="form-group row mt-3">
