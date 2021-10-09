@@ -43,11 +43,7 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-<<<<<<< Updated upstream
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Loggin') }}</a>
-=======
                                     <a class="nav-link" href="/home/create/">{{ __('Loggin') }}</a>
->>>>>>> Stashed changes
                                 </li>
                             @endif
 

@@ -27,22 +27,6 @@
     </div>
 </div>
 
-<<<<<<< Updated upstream
-<div class="card text-center mt-3">
-    <div class="card-header">
-    Hallo! Selamat Datang Di Website Kami'
-    </div>
-    <div class="card-body">
-        <h5 class="card-title">LEGREK.COM</h5>
-        <p class="card-text">Untuk Melihat Fitur-Fitur Yang Lainnya Silahkan Melakukan Login Terlebih Dahulu, Jika Belum Mempunyai Akun
-                Silahkan Registrasi</p>
-        <a href="{{ route('login') }}" class="btn btn-primary">Go somewhere</a>
-    </div>
-   
-</div>
-=======
-
->>>>>>> Stashed changes
 @endsection
 
 

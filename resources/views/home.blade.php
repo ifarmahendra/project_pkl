@@ -23,7 +23,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                @endif   
+                 @endif   
                 <form action="{{route('home.store')}}" method="post"> 
                     @csrf
                     <div class="form-group row mt-3">
