@@ -8,6 +8,17 @@
             <h1>Data Customer</h1>
           </div>
 
+            <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success " role="alert">                                 
+                            {{ session('status') }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                    @endif                   
+            </div>  
+
           <a href ="/home/create/" class="btn btn-primary mb-3">Tambah Data</a>
         <div class="table-responsive">
                 <table class="table table-hover table-striped table-bordered">          
@@ -31,8 +42,8 @@
                             <td>{{$dt->nim}}</td>
                             <td>{{$dt->kelas}}</td>
                                 <td>
-                                    <a href="" class="btn btn-sm btn-danger"><i class=" fas fa-trash"></i></a>
-                                    <a href="" class="btn btn-sm btn-primary"><i class=" fas fa-edit"></i></a>
+                                    <a href="{{route ('ifar', ['id'=>$dt->id])}}" class="btn btn-sm btn-danger"><i class=" fas fa-trash"></i></a>
+                                    <a href="{{route('home.edit', ['home'=>$dt->id])}}" class="btn btn-sm btn-primary"><i class=" fas fa-edit"></i></a>
                                 </td>
                         </tr>
                    @endforeach     

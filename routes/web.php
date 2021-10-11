@@ -19,5 +19,5 @@ Route::get('/', [App\Http\Controllers\rama::class, 'ipang']);
 
 
 Auth::routes();
-
+Route::get('/home/{id}/delete-data', [App\Http\Controllers\tambah::class, 'destroy'])-> name('ifar');
 Route::resource('/home', App\Http\Controllers\tambah::class);

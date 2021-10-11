@@ -42,7 +42,7 @@ class tambah extends Controller
             'nim'=>$request->nim,
             'kelas'=>$request->kelas
         ]);
-        return redirect()->back()->with('success', 'berhasil menambahkan');
+        return redirect()->route('home.index')->with('status', 'berhasil menambahkan');
     }
 
     /**
@@ -64,7 +64,11 @@ class tambah extends Controller
      */
     public function edit($id)
     {
-        //
+        $update = ModelCOba::where('id', $id)->first();
+        if (ModelCOba::where('id', $id)->count() == 0) {
+            return "Data Tidak Ada";
+        }
+        return view('add-data', compact('update'));
     }
 
     /**
@@ -76,7 +80,12 @@ class tambah extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        ModelCOba::where('id', $id)->update([
+            'nama'  => $request->nama,
+            'nim'   => $request->nim,
+            'kelas' => $request->kelas
+        ]);
+        return redirect()->route('home.index')->with('status', 'berhasil update data');
     }
 
     /**
@@ -87,6 +96,7 @@ class tambah extends Controller
      */
     public function destroy($id)
     {
-        //
+        ModelCOba::where('id', $id)->delete();
+        return redirect()->route('home.index')->with('status', 'berhasil menghapus data');
     }
 }
